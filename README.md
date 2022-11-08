@@ -1,6 +1,8 @@
 # x-ui-device-limiter
 Limit Number of IP's that can connect to a single user of x-ui
 
+Cloned from: https://github.com/net-pioneer/v2ray-connection-limiter
+
 Installing dependencies:
 
 Debian\Ubuntu:
