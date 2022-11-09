@@ -14,7 +14,7 @@ _telegram_chat_id = '' # you can get this in @cid_bot bot.
 _sv_addr = 'TEST SV'
 def getUsers():
     conn = sqlite3.connect(_db_address)
-    cursor = conn.execute(f"select id,remark,port from inbounds where id > 0");
+    cursor = conn.execute(f"select id,remark,port from inbounds where id > 0 and enable=1");
     users_list = [];
     for c in cursor:
         users_list.append({'name':c[1],'port':c[2]})
